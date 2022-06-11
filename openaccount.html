@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>Abrir uma Conta</title>
+    <body style="background-color:white">
+        <h1 style=color:##514e5d>Obrigado por querer abrir uma conta conosco</h1>
+        
+        <p>Clique no botão para escolher seu nome</p>
+
+	<button onclick="myFunction()">Clique em mim</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			
+			var x;
+
+			var person = prompt("Escolha seu Nome aqui", "Stift");
+
+			if (person != null) {
+				
+				x = "Olá " + person + "! Bem Vindo ao Silver Online";
+				document.getElementById("demo").innerHTML = x;
+				
+			}
+		}
+	</script>
+    </body>
+</html>
